@@ -3,6 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:icon="http://metro.mahapps.com/winfx/xaml/iconpacks"
+        xmlns:pages="clr-namespace:ERPSYSTEM_GUI.VIew.Pages"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ERPSYSTEM_GUI"
         mc:Ignorable="d"
@@ -51,9 +52,10 @@
                     <TextBlock Grid.Row="0" Text="Settings" Name="titleText" Style="{StaticResource PageTitle}" />
 
                     <!-- Page Content -->
-                    <ContentPresenter Grid.Row="2" x:Name="Container">
-                        <!-- <ContentPresenter.Content>< -->
-
+                    <ContentPresenter Grid.Row="2" x:Name="Container" HorizontalAlignment="Center">
+                        <ContentPresenter.Content>
+                            <pages:About_Page></pages:About_Page>
+                        </ContentPresenter.Content>
                     </ContentPresenter>
 
 
